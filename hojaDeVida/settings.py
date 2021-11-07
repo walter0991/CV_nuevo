@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-uqv+yqvytgg)9rv2n0q%#x2d2@zj&hd@)t3cha!4up-e_-30pi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['hojadevida-wc.herokuapp.com']
+ALLOWED_HOSTS = [] #'hojadevida-wc.herokuapp.com'
 
 
 # Application definition
@@ -101,6 +101,8 @@ DATABASES = {
         'HOST': 'ec2-34-239-34-246.compute-1.amazonaws.com',
     }
 }
+
+# DATABASES = {'default': {'ENGINE': 'django.db.backends.postgresql_psycopg2','NAME': 'CV_Walter','USER': 'postgres','PASSWORD': '0408','PORT': '5432','HOST': 'localhost',}}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
