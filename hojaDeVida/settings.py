@@ -94,9 +94,9 @@ WSGI_APPLICATION = 'hojaDeVida.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbnd49ng3hlu61',
-        'USER': 'vnldnwsajwbmtz',
-        'PASSWORD': '0e0b05b865fa91e0b78e68db97b89078a60308bb9e9f514e3ba58501aad25a4e',
+        'NAME': 'd40ltqt4vmm2ll',
+        'USER': 'synxqaysypjrzg',
+        'PASSWORD': '556ebaf14a2cb4acd5b4d893a53c342ee44245d9025a53cf827a8de6d1e3678c',
         'PORT': '5432',
         'HOST': 'ec2-34-239-34-246.compute-1.amazonaws.com',
     }
