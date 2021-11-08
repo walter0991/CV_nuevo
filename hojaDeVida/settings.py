@@ -27,7 +27,7 @@ STATICFILES_DIRS = (
 SECRET_KEY = 'django-insecure-uqv+yqvytgg)9rv2n0q%#x2d2@zj&hd@)t3cha!4up-e_-30pi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['hojadevida-wc.herokuapp.com'] #
 
@@ -141,7 +141,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
+# STATIC_ROOT = '/home/user/webpersona/static'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
