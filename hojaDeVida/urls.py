@@ -13,11 +13,15 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from typing import Pattern
 from django.contrib import admin
 from django.urls import path
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 from CVapp import views
+
+from django.conf import settings
+import os
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,3 +29,9 @@ urlpatterns = [
 ]
 
 urlpatterns += staticfiles_urlpatterns()
+
+if settings.DEBUG404:
+    urlpatterns += Pattern('',
+        (r'^static/(?P<path>.*)$', 'Django.views.static.serve',
+         {'document_root': os.path.join(os.path.dirname(__file__), 'static')} ),
+    )
