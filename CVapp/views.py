@@ -13,7 +13,7 @@ def index(request):
     experiencia = Experiencia.objects.all() 
     educacion = Educacion.objects.all()
     referencia = Referencia.objects.all()
-    capacitacion = Capacitacion.objects.order_by('id').desc()
+    capacitacion = Capacitacion.objects.order_by('-id')
     skill = Skill.objects.all()
     desarrollo = Desarrollo.objects.all()
     
